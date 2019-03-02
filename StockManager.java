@@ -59,6 +59,16 @@ public class StockManager
         return null;
     }
     
+    public Product findProduct(String name)
+    {
+        for (Product product : stock)
+        if (product.getName() == name)
+        return product; 
+        
+        return null;
+        
+    }
+    
     /**
      * Locate a product with the given ID, and return how
      * many of this item are in stock. If the ID does not
