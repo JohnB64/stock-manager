@@ -26,8 +26,11 @@ public class StockManager
      */
     public void addProduct(Product item)
     {
-        stock.add(item);
+        if (stock.contains (item))
+        {
+        stock.add (item);
     }
+}
     
     /**
      * Receive a delivery of a particular product.
